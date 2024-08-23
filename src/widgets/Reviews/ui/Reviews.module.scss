@@ -1,0 +1,72 @@
+.reviews {
+    padding: 2em 0;
+    background: linear-gradient(93.53deg, #292929 49%, #444444 98.16%);
+    box-shadow: 0px 0px 100px 0px #00000073;
+
+    @media only screen and (min-width: 960px) {
+        padding: 2em 15vw;
+    }
+
+    >h1 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    >.cards {
+
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        >.swiper {
+            padding: 1em;
+            margin: 0;
+        }
+
+        >button {
+            display: none;
+            width: 3em;
+            height: 2em;
+            background-color: #1E1E1E;
+
+            @media only screen and (min-width: 960px) {
+                display: flex;
+            }
+        }
+
+        >* {
+            &:first-child {
+                position: absolute;
+                top: 40%;
+                left: -7%;
+            }
+
+            &:last-child {
+                position: absolute;
+                top: 40%;
+                right: -7%;
+
+            }
+        }
+
+    }
+
+    >.navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #1E1E1E;
+
+        width: 13em;
+        height: 2em;
+        border-radius: 3vmax;
+        padding: 0 1em;
+        margin: 2em auto;
+        position: relative;
+
+        @media only screen and (min-width: 960px) {
+            display: none;
+        }
+
+    }
+}

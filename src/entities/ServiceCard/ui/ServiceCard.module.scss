@@ -1,0 +1,36 @@
+.serviceCard {
+    background-color: #1E1E1E;
+    padding: 1em 2em;
+
+    display: flex;
+    flex-direction: column;
+    height: 8em;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 2;
+    border-radius: 1vmax;
+
+    >.price {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &:hover {
+        border: 1px solid #6792FF;
+
+        >p {
+            color: #6792FF;
+        }
+
+        >div {
+            >p {
+                color: #6792FF;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 676px) {
+        flex: 1 0 21%;
+    }
+}

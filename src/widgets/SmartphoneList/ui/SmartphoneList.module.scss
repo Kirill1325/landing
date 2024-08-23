@@ -1,0 +1,45 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+    >h3,
+    h5 {
+        text-align: center;
+        padding-bottom: 3vh;
+
+    }
+
+    >h3 {
+
+        @media only screen and (min-width: 960px) {
+            font-size: 2em;
+        }
+    }
+
+    .smartphoneList {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+
+        @media only screen and (min-width: 960px) {
+            padding: 0 15vw;
+        }
+
+    }
+
+    >#showAll {
+        margin: 1em auto;
+        width: 80%;
+
+        @media only screen and (min-width: 960px) {
+            width: 20em;
+        }
+    }
+
+    >button{
+        z-index: 3;
+    }
+
+}

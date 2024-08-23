@@ -1,0 +1,1 @@
+export { SubmittedModal } from './ui/SubmittedModal'

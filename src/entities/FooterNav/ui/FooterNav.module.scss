@@ -1,0 +1,98 @@
+.footerNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(93.53deg, #292929 49%, #3C3C3C 98.16%);
+
+    @media only screen and (min-width: 960px) {
+        height: 7em;
+        padding: 0 15vw;
+        background: transparent;
+        flex-direction: row;
+    }
+
+    >.logoWrapper {
+        flex-basis: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+
+        @media only screen and (min-width: 767px) {
+            padding: 0;
+        }
+
+    }
+
+    >.links {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+        border-top: 2px solid #1E1E1E;
+        border-bottom: 2px solid #1E1E1E;
+        flex-basis: 45%;
+        padding: 1.5em;
+
+        >p {
+            font-size: 1.2em;
+            width: max-content;
+        }
+
+        @media only screen and (min-width: 767px) {
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            flex-basis: 30%;
+            border: none;
+
+        }
+
+    }
+
+    >.contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 40%;
+        gap: 1em;
+        padding: 1.5em 0;
+
+        >span {
+            display: flex;
+            align-items: center;
+            font-size: 1.1em;
+            gap: 1em;
+
+            >p{
+                width: max-content;
+            }
+
+            >svg {
+                width: 1.5em;
+
+                @media only screen and (min-width: 960px) {
+                    display: none;
+                }
+            }
+        }
+
+        >button {
+            width: 90%;
+            height: 4em;
+            border-radius: 4vmax;
+
+        }
+
+        @media only screen and (min-width: 767px) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 2em;
+            // flex-basis: 40%;
+        }
+
+
+    }
+}

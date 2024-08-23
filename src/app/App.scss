@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #292929;
+
+    >#root {
+
+        >.App {
+            position: relative;
+
+            >.background {
+                background: linear-gradient(93.53deg, #292929 49%, #444444 98.16%);
+                box-shadow: 0px 0px 100px 0px #00000073;
+
+            }
+
+            >.samsungfront {
+                display: none;
+
+                @media only screen and (min-width: 960px) {
+                    display: block;
+                    position: absolute;
+                    width: 18em;
+                    height: auto;
+                    top: 12.5%;
+                    z-index: 2;
+                }
+            }
+
+            >.bigVector1 {
+                display: none;
+
+                @media only screen and (min-width: 960px) {
+                    display: block;
+                    position: absolute;
+                    width: 70%;
+                    height: auto;
+                    top: 20%;
+                    z-index: 2;
+                }
+            }
+
+            >.bigVector2 {
+                display: none;
+
+                @media only screen and (min-width: 960px) {
+                    display: block;
+                    position: absolute;
+                    // width: 70%;
+                    height: auto;
+                    top: 30%;
+                    z-index: 2;
+                }
+            }
+
+            >.bigVector3 {
+                display: none;
+
+                @media only screen and (min-width: 960px) {
+                    display: block;
+                    position: absolute;
+                    width: 70%;
+                    height: auto;
+                    top: 35%;
+                    right: 0;
+                    z-index: 2;
+                }
+            }
+
+
+
+
+        }
+    }
+}
+
+.swiper-slide {
+    &.slide {
+
+        width: 18em !important;
+
+        @media only screen and (min-width: 960px) {
+            width: 15em !important;
+        }
+    }
+}
+
+button {
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    width: 12em;
+    height: 3.5em;
+    color: #6792FF;
+    border: 1px solid #6792FF;
+    border-radius: 3vmax;
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &:focus {
+        opacity: 0.6;
+    }
+
+    &.filled {
+        background-color: #6792FF;
+        color: black;
+    }
+
+
+}

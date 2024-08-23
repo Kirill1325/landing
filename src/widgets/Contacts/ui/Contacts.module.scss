@@ -1,0 +1,49 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 7em 0;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: url(../../../assets/bigwrenchtop.svg);
+        position: absolute;
+        top: -65%;
+        right: -180%;
+        
+        z-index: -1;
+        scale: .5;
+
+        @media only screen and (min-width: 960px) {
+            top: -100%;
+            left: -1%;
+            scale: 1;
+        }
+    }
+
+    &::before {
+        content: url(../../../assets/bigwrenchbottom.svg);
+        position: absolute;
+        // top: 20%;
+        // right: -2%;
+        bottom: -40%;
+        right: -115%;
+        z-index: -1;
+        scale: .5;
+
+        @media only screen and (min-width: 960px) {
+            top: 20%;
+            right: -2%;
+            scale: 1;
+        }
+
+    }
+
+    >h1,
+    h3 {
+        text-align: center;
+        max-width: 25em;
+    }
+}

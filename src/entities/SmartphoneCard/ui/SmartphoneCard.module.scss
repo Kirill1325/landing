@@ -1,0 +1,30 @@
+.smartphoneCard {
+    background-color: #1E1E1E;
+
+    width: 9em;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2vmax;
+    z-index: 2;
+
+    @media only screen and (min-width: 960px) {
+        max-width: 20em;
+        height: 18em;
+        flex: 1 0 21%;
+
+    }
+
+    >img {
+        height: 60%;
+        width: auto;
+    }
+
+    >p {
+        text-align: center;
+        padding-top: 1em;
+        color: #6792FF;
+    }
+}

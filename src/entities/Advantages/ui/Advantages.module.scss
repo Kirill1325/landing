@@ -1,0 +1,55 @@
+.advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 2em 0;
+    // box-shadow: 0px 0px 60px 0px #06060C80;
+    background: linear-gradient(93.53deg, #292929 49%, #3C3C3C 98.16%);
+    box-shadow: 0px 0px 60px 0px #06060C80;
+    
+
+    @media only screen and (min-width: 960px) {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    >.advantagesItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media only screen and (min-width: 960px) {
+            flex-direction: row;
+            justify-content: center;
+            gap: 1em;
+            max-width: 15em;
+        }
+
+        >svg {
+            cursor: pointer;
+
+            &:hover {
+                >defs {
+                    >linearGradient {
+                        >stop {
+                            stop-color: #6792FF;
+                        }
+                    }
+                }
+            }
+
+            @media only screen and (min-width: 960px) {
+
+                >defs {
+                    >linearGradient {
+                        >stop {
+                            stop-color: gray;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

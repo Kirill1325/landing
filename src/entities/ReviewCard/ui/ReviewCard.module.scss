@@ -1,0 +1,31 @@
+.reviewCard {
+    display: flex;
+    flex-direction: column;
+    background-color: #1E1E1E;
+    border-radius: 1vmax;
+    padding: 1em;
+    gap: 1em;
+
+    >p{
+        font-size: .9em;
+    }
+
+    >.user {
+        display: flex;
+        align-items: center;
+        gap: 1.5em;
+        padding: 0.5em;
+
+        >.userAvatar {
+            width: 3em;
+            height: 3em;
+            border-radius: 50%;
+            background-color: #292929;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            
+        }
+    }
+}

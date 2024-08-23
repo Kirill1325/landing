@@ -1,0 +1,203 @@
+.services {
+    padding: 2em 1em;
+    position: relative;
+
+    @media only screen and (min-width: 676px) {
+        padding: 4em 15vw;
+
+    }
+
+    >.samsungback {
+        display: none;
+
+        @media only screen and (min-width: 960px) {
+            display: block;
+            position: absolute;
+            width: 9em;
+            height: auto;
+            bottom: 20%;
+            right: 0;
+        }
+    }
+
+    >h2,
+    h4 {
+        padding-bottom: 3vh;
+        text-align: center;
+    }
+
+    >.servicesList {
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        flex-wrap: wrap;
+    }
+
+    >.anotherServicesList {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        padding-top: 1em;
+
+        @media only screen and (min-width: 960px) {
+            padding-top: 3em;
+        }
+
+        >.card {
+            position: relative;
+            background-color: #1E1E1E;
+            height: 212px;
+
+            padding: 1em 2em;
+            border-radius: 1vmax;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+
+            @media only screen and (min-width: 960px) {
+                padding-top: 3em;
+                margin-top: 1em;
+            }
+
+            &:hover {
+                border: 1px solid #6792FF;
+            }
+
+
+            &.first {
+                >img {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    border-radius: 1vmax;
+
+                }
+            }
+
+            &.second {
+                position: relative;
+
+                &::after {
+                    content: url(../../../assets/Vector1.svg);
+                    position: absolute;
+                    right: 0;
+                    top: 30%;
+                }
+
+                &::before {
+                    content: url(../../../assets/Vector2.svg);
+                    position: absolute;
+                    right: 0;
+                    top: 5%;
+                }
+
+                >#brokenphone {
+                    position: absolute;
+                    top: 30%;
+                    right: 3%;
+                    scale: 1.2;
+
+                    @media only screen and (min-width: 960px) {
+                        top: 10%;
+                        right: -2%;
+                        scale: .9;
+                    }
+                }
+            }
+
+            &.trird {
+                position: relative;
+                overflow: hidden;
+                height: 190px;
+                background-image: url(../../../assets/storage.png);
+
+                &::after {
+                    content: url(../../../assets/Vector4.svg);
+                    position: absolute;
+                    bottom: 0;
+
+
+                }
+
+                &::before {
+                    content: url(../../../assets/Vector5.svg);
+                    position: absolute;
+                    right: 32%;
+                    display: none;
+
+                    @media only screen and (min-width: 676px) {
+                        display: block;
+
+                    }
+                }
+
+                >button {
+                    z-index: 2;
+
+                    &::after {
+                        content: url(../../../assets/Vector3.svg);
+                        position: absolute;
+                        top: 5%;
+                        left: 0;
+                        display: none;
+
+                        @media only screen and (min-width: 676px) {
+                            display: block;
+
+                        }
+                    }
+                }
+
+                @media only screen and (min-width: 960px) {
+                    background-repeat: no-repeat;
+                    background-position: right;
+                    background-size: contain;
+                }
+
+            }
+
+            @media only screen and (min-width: 676px) {
+                flex: 1 0 45%;
+
+            }
+
+            >#first {
+                font-size: 1.3em;
+                letter-spacing: 1px;
+                width: 80%;
+            }
+
+            >#second {
+                width: 80%;
+            }
+
+
+
+            >#brokenphone {
+                position: absolute;
+                right: -5%;
+                top: 10%;
+                width: 35%;
+            }
+
+            >button {
+                border: none;
+                display: flex;
+                align-items: center;
+                gap: 1em;
+                width: 100%;
+
+                >p {
+                    color: #6792FF;
+                    font-weight: 700;
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+}
