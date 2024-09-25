@@ -1,5 +1,5 @@
 import cl from './HeaderBanner.module.scss'
-import frame117 from '../../../assets/frame117.png'
+import frame117 from '../../../assets/Frame117.png'
 import { useAppDispatch } from '../../../app/store'
 import { toggleBasicModal } from '../../../widgets/Modal/model/modalSlice'
 
